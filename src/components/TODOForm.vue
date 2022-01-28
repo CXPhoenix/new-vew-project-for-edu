@@ -19,8 +19,8 @@ export default {
 <template>
   <section id="creater" class="mt-4 mb-1">
     <form class="text-center">
-      <label class="w-10/12 block mx-auto space-y-2" for="todo-create">
-        <h2 class="text-3xl tracking-[.35rem]">請填寫代辦事項：</h2>
+      <label class="w-10/12 block mx-auto space-y-2 md:space-y-5" for="todo-create">
+        <h2 class="text-3xl tracking-[.2rem] md:text-[2rem]">請填寫代辦事項：</h2>
         <input
           autocomplete="off"
           type="text"
@@ -33,7 +33,7 @@ export default {
           value="提交"
           v-bind:disabled="message == ''"
           @click.prevent="addData"
-          class="py-3 w-full bg-green-500 rounded-md text-center text-2xl text-gray-100 cursor-pointer hover:bg-green-700 active:translate-y-1 disabled:bg-gray-400"
+          class="py-3 w-full bg-green-500 rounded-md text-center text-2xl text-gray-100 cursor-pointer hover:bg-green-700 active:translate-y-1 disabled:bg-gray-400 md:w-1/2"
         />
       </label>
     </form>

@@ -5,7 +5,7 @@ export default {
     const title = props.title;
     let textClassName = props.textClassName;
     if (!textClassName) {
-        textClassName = "text-center text-[3rem] text-gray-800"
+        textClassName = "text-center text-[3rem] text-gray-800 md:text-[6.5vw] xl:text-[5rem]"
     }
     return { title, textClassName };
   },
